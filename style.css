@@ -1,3 +1,163 @@
-*{
-    border: 2px solid rgb(128, 4, 4);
+body {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    color: red;
+}
+
+.headers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas: " a b b" " a c c" " a e e" " a d d";
+}
+
+.imgHeader {
+    grid-area: a;
+    height: 190px;
+    width: 190px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.h1 {
+    grid-area: b;
+}
+
+.linkGit {
+    grid-area: c;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.linkLinked {
+    grid-area: d;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.linkFace {
+    grid-area: e;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*Block menu*/
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 90px;
+    display: none;
+}
+
+.menu .title {
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.menu .title::before {
+    content: '▶ ';
+    font-size: 80%;
+    color: green;
+}
+
+.menu.open .title::before {
+    content: '▼ ';
+}
+
+.menu.open ul {
+    display: block;
+}
+
+
+/* Slideshow container */
+
+h3 {
+    text-transform: uppercase;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/2 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
