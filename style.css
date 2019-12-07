@@ -1,3 +1,7 @@
+/* * {
+    border: 1px solid rgb(116, 3, 3);
+} */
+
 body {
     padding: 0;
     margin: 0;
@@ -9,7 +13,12 @@ li {
 
 h3 {
     font-size: 40px;
-    color: red;
+    color: rgb(102, 4, 4);
+}
+
+p {
+    font-size: 45px;
+    color: rgb(255, 196, 0);
 }
 
 .headers {
@@ -55,8 +64,6 @@ h3 {
 /*Block menu*/
 
 .menu ul {
-    margin: 0;
-    list-style: none;
     padding-left: 90px;
     display: none;
 }
@@ -64,7 +71,7 @@ h3 {
 .menu .title {
     font-size: 30px;
     cursor: pointer;
-    color: red;
+    color: rgb(102, 4, 4);
     font-weight: bold;
 }
 
@@ -109,10 +116,12 @@ h3 {
 
 .prev,
 .next {
+    background-color: rgba(221, 157, 20, 0.993);
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
+    top: 20px;
+    width: 40px;
+    height: 410px;
     margin-top: -22px;
     padding: 16px;
     color: white;
@@ -155,9 +164,20 @@ h3 {
 /* Number text (1/2 etc) */
 
 .numbertext {
+    background-color: rgba(29, 40, 75, 0.938);
+    font-weight: bold;
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 24px;
+    padding: 0px 12px;
     position: absolute;
     top: 0;
+    left: 70px;
+    height: 440px;
+    width: 550px;
+}
+
+.imgProject {
+    position: absolute;
+    width: 310px;
+    left: 620px;
 }
